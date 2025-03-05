@@ -60,6 +60,8 @@ BOOLEAN Render::InitRender()
 		return FALSE;
 	}
 
+	ThreadProcessOffset = GetThreadProcessOffset();
+
 	if (!SpoofGuiThread())
 	{
 		return FALSE;
